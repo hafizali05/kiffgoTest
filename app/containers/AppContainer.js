@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { ActionCreators } from '../actions';
-import Windowshop from './Windowshop';
+import LoginScreen from './LoginScreen';
 
 class AppContainer extends Component {
   render() {
-    return <Windowshop {...this.props} />
+    return <LoginScreen {...this.props} />
   }
 }
 

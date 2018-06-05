@@ -11,7 +11,7 @@ const {
 } = ReactNative;
 import { connect } from 'react-redux';
 
-class Windowshop extends Component {
+class LoginScreen extends Component {
   constructor() {
     super();
 
@@ -19,7 +19,7 @@ class Windowshop extends Component {
   }
 
   onPress() {
-    this.props.login();
+    this.props.login('', '');
   }
 
   render() {
@@ -40,4 +40,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(Windowshop);
+export default connect(mapStateToProps)(LoginScreen);

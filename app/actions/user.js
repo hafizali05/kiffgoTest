@@ -1,19 +1,25 @@
 import * as types from './types';
 import Api from '../lib/api';
 
-export function login() {
+export function login(email, password) {
   return (dispatch, getState) => {
-    dispatch({
-      type: types.SET_USER,
-      user: {
-        loggedIn: true,
-        name: 'Alex Test'
+    Api.post('interview-test/login', {
+      email: 'alex@user.com',
+      password: 'SuperSecr3t!'}).then( resp => {
+      if (resp.err) {
       }
+      dispatch({
+        type: types.SET_USER,
+        user: {
+          loggedIn: true,
+          ...resp
+        }
+      });
     });
   }
 }
 
-export function setWindowshopItems(user) {
+export function setLoginScreenItems(user) {
   return {
     type: types.SET_USER,
     user
