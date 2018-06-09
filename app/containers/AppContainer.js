@@ -10,7 +10,7 @@ class AppContainer extends Component {
   render() {
     return (
       <View>
-        <Header />
+        <Header headerText = {'Login'}/>
         <LoginScreen {...this.props} />        
       </View>
 
