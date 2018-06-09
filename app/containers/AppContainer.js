@@ -5,13 +5,15 @@ import { bindActionCreators } from 'redux';
 import { ActionCreators } from '../actions';
 import LoginScreen from './LoginScreen';
 import Header from './Header';
+import JobsList from './JobsList';
 
 class AppContainer extends Component {
   render() {
     return (
       <View>
         <Header headerText = {'Login'}/>
-        <LoginScreen {...this.props} />        
+        {/* <LoginScreen {...this.props} />         */}
+        <JobsList />
       </View>
 
     );
