@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 import Axios from "axios";
-
+import JobDetails from "./JobDetails";
 class JobsList extends Component {
   state = {
     jobs: []
@@ -13,7 +13,9 @@ class JobsList extends Component {
     );
   }
   renderJobs() {
-    return this.state.jobs.map(job => <Text key={job.title}>{job.title}</Text>);
+    return this.state.jobs.map(job => (
+      <JobDetails key={job.title} jobs={job} />
+    ));
   }
   render() {
     return (
