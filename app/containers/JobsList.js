@@ -13,7 +13,7 @@ class JobsList extends Component {
     );
   }
   renderJobs() {
-    return this.state.jobs.map(job => <Text>{job.title}</Text>);
+    return this.state.jobs.map(job => <Text key={job.title}>{job.title}</Text>);
   }
   render() {
     return (
