@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
-import Card from "./Card";
-import CardSection from "./CardSection";
+import Card from "./common/Card";
+import CardSection from "./common/CardSection";
 
 const JobDetails = props => {
   const { headerContentStyle } = styles;

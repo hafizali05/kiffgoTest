@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { ActionCreators } from '../actions';
 import LoginScreen from './LoginScreen';
-import Header from './Header';
+import Header from './common/Header';
 import JobsList from './JobsList';
 
 class AppContainer extends Component {
