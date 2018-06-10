@@ -7,7 +7,7 @@ const JobDetails = props => {
   return (
     <Card>
       <CardSection>
-        <Text>{props.jobs.title}</Text>
+        <Text>{props.jobs.name}</Text>
       </CardSection>
     </Card>
   );
