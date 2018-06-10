@@ -4,13 +4,30 @@ import Card from "./Card";
 import CardSection from "./CardSection";
 
 const JobDetails = props => {
+  const { headerContentStyle } = styles;
+
   return (
     <Card>
       <CardSection>
-        <Text>{props.jobs.name}</Text>
+        <View>
+          <Text>{props.jobs.cost}</Text>
+        </View>
+        <View style={headerContentStyle}>
+          <Text>{props.jobs.name}</Text>
+          <Text>{props.jobs.pickupDate}</Text>
+          <Text>{props.jobs.startPostCode}</Text>
+          <Text>{props.jobs.endPostCode}</Text>
+        </View>
       </CardSection>
     </Card>
   );
+};
+
+const styles = {
+  headerContentStyle: {
+    flexDirection: "column",
+    justifyContent: "space-around"
+  }
 };
 
 export default JobDetails;
