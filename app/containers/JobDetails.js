@@ -1,14 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import { Text, View } from "react-native";
 import Card from "./Card";
+import CardSection from "./CardSection";
 
 const JobDetails = props => {
   return (
-    <View>
-      <Card>
+    <Card>
+      <CardSection>
         <Text>{props.jobs.title}</Text>
-      </Card>
-    </View>
+      </CardSection>
+    </Card>
   );
 };
 
