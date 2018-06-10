@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import Axios from "axios";
 import JobDetails from "./JobDetails";
 class JobsList extends Component {
